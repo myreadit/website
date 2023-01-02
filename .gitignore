@@ -1,0 +1,10 @@
+.DS_Store
+node_modules/
+dist/
+.*/
+!.github/
+*-lock.yaml
+*-lock.json
+*.lock
+*.log
+src/__generated__/*.ts
