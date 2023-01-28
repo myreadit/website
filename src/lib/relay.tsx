@@ -31,8 +31,8 @@ const env = new Environment({
     ),
 })
 
-function preload(query: GraphQLTaggedNode, vars = {}) {
-    return fetchQuery(env, query, vars).toPromise()
+function preload<T extends OperationType>(query: GraphQLTaggedNode, vars: T['variables'] = {}) {
+    return fetchQuery<T>(env, query, vars).toPromise()
 }
 
 export function withPreloader<F extends GetServerSideProps | GetStaticProps = GetServerSideProps>(
