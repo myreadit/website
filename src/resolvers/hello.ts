@@ -1,4 +1,4 @@
-import { Resolvers } from '@/__generated__/resolver-types'
+import { Resolvers } from '@/__generated__/resolver_types'
 
 export default {
     Query: {

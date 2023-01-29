@@ -7,4 +7,3 @@ dist/
 *-lock.json
 *.lock
 *.log
-src/__generated__/*.ts

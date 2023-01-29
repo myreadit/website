@@ -1,5 +1,5 @@
 import { usePageQuery, withPreloader } from '@/lib/relay'
-import { pagesIndexQuery } from '@/__generated__/pagesIndexQuery.graphql'
+import { pagesIndexQuery } from '@/__generated__/relay/pagesIndexQuery.graphql'
 import { graphql } from 'react-relay'
 
 const query = graphql`
